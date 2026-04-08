@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Link from 'next/link'
 import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
@@ -544,12 +545,14 @@ export default function About() {
                         {/* Contact for Partnership */}
                         <div className="mt-12 text-center">
                             <p className="text-medium-gray mb-4">Interested in partnering with us?</p>
-                            <Button
-                                variant="primary"
-                                className="hover:!bg-dark-green"
-                            >
-                                Get in Touch
-                            </Button>
+                            <Link href="/contact">
+                                <Button
+                                    variant="primary"
+                                    className="hover:!bg-dark-green"
+                                >
+                                    Get in Touch
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
