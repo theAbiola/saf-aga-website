@@ -740,9 +740,11 @@ export default function Home() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready to explore sustainable energy solutions?</h2>
                         <p className="text-lg mb-8 text-green-50">Let's discuss your energy roadmap and find the perfect solution for your needs.</p>
-                        <Button variant="secondary" className="!border-white !text-white bg-dark-green hover:!bg-primary-green hover:!border-white/80">
-                            Get Started
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white bg-dark-green hover:!bg-primary-green hover:!border-white/80">
+                                Get Started
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer >
