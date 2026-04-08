@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     description: 'Powering sustainable futures for homes, businesses, and communities. SAF-AGA Renewable Energy Limited delivers solar systems, mini-grid solutions, and energy storage across Nigeria.',
     keywords: 'renewable energy, solar power, mini-grid, Nigeria, clean energy, energy audit, sustainable power',
     authors: [{ name: 'SAF-AGA Renewable Energy Limited' }],
+    icons: {
+        icon: '/saf-aga.ico',
+    },
     openGraph: {
         type: 'website',
         locale: 'en_US',
