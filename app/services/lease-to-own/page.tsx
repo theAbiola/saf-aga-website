@@ -5,6 +5,7 @@ import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
 import Image from 'next/image'
 import { CheckCircle, Zap, DollarSign, Percent, TrendingUp, Award } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Lease to Own - SAF-AGA Renewable Energy Limited',
@@ -24,7 +25,9 @@ export default function LeaseToOwn() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Transition from leasing to ownership with installment plans that grow with your energy savings and help you achieve full asset ownership.
                             </p>
-                            <Button variant="primary">Learn About Lease to Own</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Learn About Lease to Own</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -222,7 +225,9 @@ export default function LeaseToOwn() {
                         <p className="text-lg text-medium-gray mb-8">
                             Explore how Lease to Own can help you transition to clean, affordable solar energy while building toward full ownership.
                         </p>
-                        <Button variant="primary">Schedule a Consultation</Button>
+                        <Link href="/contact">
+                            <Button variant="primary">Schedule a Consultation</Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

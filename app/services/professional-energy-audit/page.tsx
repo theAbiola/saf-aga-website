@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Professional Energy Audit - SAF-AGA Renewable Energy Limited',
@@ -22,7 +23,9 @@ export default function ProfessionalEnergyAudit() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Discover exactly where your facility is losing money. Our expert energy audits reveal hidden inefficiencies and deliver actionable solutions to reduce costs by 30-50%.
                             </p>
-                            <Button variant="primary">Schedule Your Audit</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Schedule Your Audit</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -225,9 +228,11 @@ export default function ProfessionalEnergyAudit() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Discover Your Energy Savings Potential</h2>
                         <p className="text-lg mb-8 text-green-50">Get a free initial consultation and learn what you can save.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Request Energy Audit
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Request Energy Audit
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

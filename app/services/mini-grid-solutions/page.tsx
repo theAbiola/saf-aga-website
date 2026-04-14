@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Mini-Grid Solutions - SAF-AGA Renewable Energy Limited',
@@ -22,7 +23,9 @@ export default function MiniGridSolutions() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Transform rural communities with reliable 24/7 solar power that reduces costs by up to 60% and creates lasting economic opportunities.
                             </p>
-                            <Button variant="primary">Request a Consultation</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Request a Consultation</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -190,9 +193,11 @@ export default function MiniGridSolutions() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready to bring reliable power to your community?</h2>
                         <p className="text-lg mb-8 text-green-50">Let's discuss your mini-grid project and find the right solution.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Schedule a Consultation
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Schedule a Consultation
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Captive Power Solutions - SAF-AGA Renewable Energy Limited',
@@ -22,7 +23,9 @@ export default function CaptivePowerSolutions() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Cut your energy bills by 70% with custom solar systems designed for businesses, schools, healthcare facilities, and residential properties across Nigeria.
                             </p>
-                            <Button variant="primary">Get Your Energy Audit</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Get Your Energy Audit</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -161,9 +164,11 @@ export default function CaptivePowerSolutions() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready to cut your energy costs by 70%?</h2>
                         <p className="text-lg mb-8 text-green-50">Get a free energy audit and custom solar solution for your facility.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Request Free Audit
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Request Free Audit
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

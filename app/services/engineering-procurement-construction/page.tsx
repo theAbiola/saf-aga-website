@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Engineering, Procurement & Construction Services - SAF-AGA Renewable Energy Limited',
@@ -22,7 +23,9 @@ export default function EngineeringProcurementConstruction() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Turnkey solutions for large-scale solar projects. From design to installation to commissioning—we manage every aspect of your energy transformation.
                             </p>
-                            <Button variant="primary">Get Project Consultation</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Get Project Consultation</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -286,9 +289,12 @@ export default function EngineeringProcurementConstruction() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready for Your Next Energy Project?</h2>
                         <p className="text-lg mb-8 text-green-50">Let us manage the complete journey from design to operation.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Start EPC Consultation
-                        </Button>
+                        
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Start EPC Consultation
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

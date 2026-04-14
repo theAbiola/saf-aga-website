@@ -193,7 +193,7 @@ export default function About() {
                                 <h3 className="heading-3 text-lg mb-1">Dr. Godbless Safugha</h3>
                                 <p className="text-primary-green font-semibold mb-3">Managing Director (MD / CEO)</p>
                                 <p className="text-medium-gray text-sm">
-                                    Solar engineer with 15+ years of experience in renewable energy systems. Visionary leader driving ACOB's strategic direction.
+                                    Development economist with 18 years of experience in the financial services industry. He is an accomplished executive leader with a proven track record in financial inclusion, project management, business development, and renewable energy.
                                 </p>
                             </div>
 
@@ -202,22 +202,23 @@ export default function About() {
                                 <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
                                     👨‍🔬
                                 </div>
-                                <h3 className="heading-3 text-lg mb-1">Dr. Chukwu Adeyemi</h3>
-                                <p className="text-primary-green font-semibold mb-3">Technical Director</p>
+                                <h3 className="heading-3 text-lg mb-1">Mr. Agara Anthony Chuks</h3>
+                                <p className="text-primary-green font-semibold mb-3">Executive Director</p>
                                 <p className="text-medium-gray text-sm">
-                                    PhD in Renewable Energy Engineering. Leads engineering design and ensures all projects meet international standards.
+                                    Top-performing professional with a strong passion for sales, Marketing, business development and expansion. An excellence-oriented, highly-motivated, productive and dynamic professional with strong commercial awareness.
                                 </p>
                             </div>
 
                             {/* Team Member 3 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
                                 <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    👩‍💼
+                                    👨‍🔬
                                 </div>
-                                <h3 className="heading-3 text-lg mb-1">Zainab Mohammed</h3>
-                                <p className="text-primary-green font-semibold mb-3">Chief Operations Officer</p>
+                                <h3 className="heading-3 text-lg mb-1">Henry Oluwarotimi Alikali</h3>
+                                <p className="text-primary-green font-semibold mb-3">Chief Finance Officer (CFO)</p>
                                 <p className="text-medium-gray text-sm">
-                                    Operations expert managing delivery excellence, project timelines, and client satisfaction across our portfolio.
+                                    Graduate of Accounting and a Certified National Accountant (CAN) wi th a career spanning over 10 years of experience managing financial and administration systems.
+                                    He has worked on numerous projects from esteemed organizations such as MEDA, UNICEF, USAID, CIDA, DFID, TY Danjuma Foundation, and Emeraid Capital.                      
                                 </p>
                             </div>
 
@@ -226,10 +227,10 @@ export default function About() {
                                 <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
                                     💼
                                 </div>
-                                <h3 className="heading-3 text-lg mb-1">Emmanuel Okafor</h3>
-                                <p className="text-primary-green font-semibold mb-3">Head of Business Development</p>
+                                <h3 className="heading-3 text-lg mb-1">Damilola Ayodele</h3>
+                                <p className="text-primary-green font-semibold mb-3">Chief Technology Officer (CTO)</p>
                                 <p className="text-medium-gray text-sm">
-                                    Business strategist focused on expanding our reach to new markets and developing strategic partnerships.
+                                    Damilola Ayodele is a highly accomplished Chief Technology Officer with a distinguished track record of driving innovation and leading technology teams within the renewable energy sector. Mr. Ayodele is particularly skilled at leveraging his extensive technical expertise to develop sustainable solutions, optimize operations, and enhance product offerings.                                
                                 </p>
                             </div>
 

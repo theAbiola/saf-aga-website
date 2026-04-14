@@ -5,6 +5,7 @@ import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
 import Image from 'next/image'
 import { CheckCircle, Building2, DollarSign, Zap, BarChart3, Users } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Commercial & Industries Solutions - SAF-AGA Renewable Energy Limited',
@@ -24,7 +25,9 @@ export default function CommercialIndustries() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Custom-engineered solar solutions that reduce operating costs for manufacturers, distributors, and industrial facilities by up to 70%.
                             </p>
-                            <Button variant="primary">Get Energy Assessment</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Get Energy Assessment</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -173,7 +176,9 @@ export default function CommercialIndustries() {
                         <p className="text-lg text-medium-gray mb-8">
                             Get a free energy audit and discover exactly how much you can save with commercial solar.
                         </p>
-                        <Button variant="primary">Request Free Energy Audit</Button>
+                        <Link href="/contact">
+                            <Button variant="primary">Request Free Energy Audit</Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

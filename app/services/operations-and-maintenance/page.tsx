@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
+import Link from 'next/link'
+
 
 export const metadata = {
     title: 'Operations & Maintenance Services - SAF-AGA Renewable Energy Limited',
@@ -22,7 +24,9 @@ export default function OperationsAndMaintenance() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Maximize your solar system's performance and lifespan with comprehensive operations, maintenance, and monitoring services. Keep your systems running at 100% efficiency.
                             </p>
-                            <Button variant="primary">Get Maintenance Quote</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Get Maintenance Quote</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -364,9 +368,11 @@ export default function OperationsAndMaintenance() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Protect Your Solar Investment</h2>
                         <p className="text-lg mb-8 text-green-50">Ensure maximum performance and longevity with professional operations and maintenance.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Get O&M Quote
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Get O&M Quote
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

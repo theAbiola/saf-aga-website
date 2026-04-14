@@ -5,6 +5,7 @@ import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
 import Image from 'next/image'
 import { CheckCircle, Zap, DollarSign, Clock, Users, TrendingUp } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Energy As A Service - SAF-AGA Renewable Energy Limited',
@@ -24,7 +25,9 @@ export default function EnergyAsAService() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Pay only for the energy you use with flexible financing options that eliminate upfront capital costs and project risk.
                             </p>
-                            <Button variant="primary">Request a Consultation</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Request a Consultation</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -161,7 +164,9 @@ export default function EnergyAsAService() {
                         <p className="text-lg text-medium-gray mb-8">
                             Let's discuss how Energy As A Service can transform your energy strategy and reduce costs without capital investment.
                         </p>
-                        <Button variant="primary">Schedule a Free Consultation</Button>
+                        <Link href="/contact">
+                            <Button variant="primary">Schedule a Free Consultation</Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

@@ -5,6 +5,7 @@ import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
 import Image from 'next/image'
 import { CheckCircle, Zap, Wrench, Users, Lightbulb, TrendingUp } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'Productive Use Equipment - SAF-AGA Renewable Energy Limited',
@@ -24,7 +25,9 @@ export default function ProductiveUseEquipment() {
                             <p className="text-xl text-medium-gray mb-6">
                                 Empower businesses and communities with solar-powered equipment for agriculture, water systems, and small enterprises.
                             </p>
-                            <Button variant="primary">Request a Consultation</Button>
+                            <Link href="/contact">
+                                <Button variant="primary">Request a Consultation</Button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -173,7 +176,9 @@ export default function ProductiveUseEquipment() {
                         <p className="text-lg text-medium-gray mb-8">
                             Connect your community or business with solar-powered productive equipment that generates sustainable income.
                         </p>
-                        <Button variant="primary">Schedule a Free Assessment</Button>
+                        <Link href="/contact">
+                            <Button variant="primary">Schedule a Free Assessment</Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>
