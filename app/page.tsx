@@ -221,13 +221,13 @@ export default function Home() {
                                 <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
-                                            <Power size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
+                                            <Wrench size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Energy As A Service</h3>
+                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Productive Use Equipments</h3>
                                         <p className="text-medium-gray text-sm leading-relaxed">
-                                            Pay only for the energy you use with flexible financing options that eliminate upfront capital costs and project risk.
+                                            Solar-powered equipment and machinery that enhances productivity for agricultural, commercial, and industrial applications.
                                         </p>
                                     </div>
                                 </div>
@@ -236,13 +236,13 @@ export default function Home() {
                                 <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
-                                            <Building2 size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
+                                            <Lightbulb size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Commercial & Industries</h3>
+                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Energising Education</h3>
                                         <p className="text-medium-gray text-sm leading-relaxed">
-                                            Custom-engineered solutions that reduce operating costs for manufacturers, distributors, and industrial facilities by up to 70%.
+                                            Renewable energy solutions for schools and universities enabling 24/7 power access for learning, research, and digital transformation.
                                         </p>
                                     </div>
                                 </div>
@@ -251,13 +251,13 @@ export default function Home() {
                                 <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
-                                            <ClipboardList size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
+                                            <Power size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Operations and Maintenance</h3>
+                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Solar Home Systems</h3>
                                         <p className="text-medium-gray text-sm leading-relaxed">
-                                            Maximize your renewable energy ROI with 24/7 monitoring and proactive maintenance that ensures 99%+ system uptime year-round.
+                                            Affordable residential solar solutions that provide reliable, clean energy to households with flexible financing options.
                                         </p>
                                     </div>
                                 </div>
@@ -271,7 +271,7 @@ export default function Home() {
                     <div className="section-container">
                         <div className="mb-12">
                             <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-dark-gray mb-6 text-center">
-                                Our Solutions
+                                Our Innovative Solutions
                             </h2>
                             <p className="text-lg text-medium-gray text-center max-w-3xl mx-auto">
                                 Tailored renewable energy solutions designed to meet the unique needs of every customer
@@ -305,25 +305,25 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 2 - Professional Energy Audit */}
+                            {/* Card 2 - Site Assessment and Monitoring */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                                 <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                                     <Image
                                         src="/solar-panel3.jpg"
-                                        alt="Professional Energy Audit"
+                                        alt="Site Assessment and Monitoring"
                                         fill
                                         className="object-cover hover:scale-105 transition-transform duration-300"
                                     />
                                     <div className="absolute inset-0 bg-black/30 flex items-end p-4">
-                                        <h4 className="text-white font-bold text-lg">CONSULTING</h4>
+                                        <h4 className="text-white font-bold text-lg">ASSESSMENT</h4>
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Professional Energy Audit</h3>
+                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Site Assessment and Monitoring</h3>
                                     <p className="text-medium-gray text-sm leading-relaxed mb-6">
-                                        Discover hidden energy savings worth thousands of naira through detailed audits that identify inefficiencies and optimization opportunities.
+                                        Smart, data-driven site assessments with advanced monitoring ensure optimal system performance, predictable results, and prompt issue resolution.
                                     </p>
-                                    <Link href="/services/professional-energy-audit">
+                                    <Link href="/services/mini-grid-solutions">
                                         <button className="w-full py-3 border border-dark-gray text-dark-gray font-semibold rounded-lg hover:bg-dark-gray/5 transition-colors duration-300">
                                             See solution details →
                                         </button>
@@ -331,25 +331,25 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 3 - Lease to Own */}
+                            {/* Card 3 - Load Control and Scalability */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                                 <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                                     <Image
                                         src="/solar-panel4.jpg"
-                                        alt="Lease to Own"
+                                        alt="Load Control and Scalability"
                                         fill
                                         className="object-cover hover:scale-105 transition-transform duration-300"
                                     />
                                     <div className="absolute inset-0 bg-black/30 flex items-end p-4">
-                                        <h4 className="text-white font-bold text-lg">FINANCING</h4>
+                                        <h4 className="text-white font-bold text-lg">TECHNOLOGY</h4>
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Lease to Own</h3>
+                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Load Control and Scalability</h3>
                                     <p className="text-medium-gray text-sm leading-relaxed mb-6">
-                                        Transition from leasing to ownership with installment plans that grow with your energy savings and help you achieve full asset ownership.
+                                        AI-powered load control maximizes energy efficiency while scalable infrastructure supports grid expansion without operational complexity.
                                     </p>
-                                    <Link href="/services/lease-to-own">
+                                    <Link href="/services">
                                         <button className="w-full py-3 border border-dark-gray text-dark-gray font-semibold rounded-lg hover:bg-dark-gray/5 transition-colors duration-300">
                                             See solution details →
                                         </button>
@@ -521,13 +521,13 @@ export default function Home() {
 
                                 <div className="space-y-6 mb-8">
                                     <p className="text-lg text-slate-700 leading-relaxed">
-                                        We are a Nigerian-born company advancing equitable energy access through robust renewable infrastructure.
+                                        <strong>Community-Centric Approach:</strong> We prioritize community engagement and empowerment in all our projects.
                                     </p>
                                     <p className="text-lg text-slate-700 leading-relaxed">
-                                        Our field teams, engineers, and financing partners work hand-in-hand to deliver energy security and economic opportunity.
+                                        <strong>Innovation:</strong> We leverage cutting-edge technologies like PV Coating Solutions, Graphene Battery Solutions, and Advance Energy Management Systems to maximize efficiency and impact.
                                     </p>
                                     <p className="text-lg text-slate-700 leading-relaxed">
-                                        By coupling technology with local insights, we deploy solutions that perform in the toughest operating environments.
+                                        <strong>Financial Sustainability:</strong> We have reliable funding partners and manage projects for long-term success. Our grids operate sustainably through cost-reflective tariff.
                                     </p>
                                 </div>
 
@@ -569,7 +569,7 @@ export default function Home() {
                             <div>
                                 <div className="relative h-[368px] lg:h-[442px] rounded-3xl overflow-hidden shadow-lg mb-8">
                                     <Image
-                                        src="/solar-panel4.jpg"
+                                        src="/images/why-safaga.png"
                                         alt="SAF-AGA Renewable Energy Team"
                                         fill
                                         className="object-cover"

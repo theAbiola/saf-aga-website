@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import PageContainer from '@/components/PageContainer'
 import Button from '@/components/Button'
 import Link from 'next/link'
+import Image from 'next/image'
 import SectionHeading from '@/components/SectionHeading'
 import { Zap, BarChart3, Wrench, DollarSign, Hammer, Building2, FileText } from 'lucide-react'
 
@@ -17,6 +18,7 @@ const services = [
         title: 'Mini-Grid Solutions',
         description: 'Transform rural communities with reliable 24/7 solar power that reduces costs by up to 60%.',
         icon: Zap,
+        image: '/images/mini-grid-3.png',
         benefits: ['24/7 Reliable Power', 'Cost Reduction', 'Community Impact'],
     },
     {
@@ -24,6 +26,7 @@ const services = [
         title: 'Productive Use Equipment',
         description: 'Solar-powered equipment and tools to maximize economic returns for rural communities.',
         icon: Hammer,
+        image: '/images/pue-1.png',
         benefits: ['Economic Growth', 'Community Empowerment', 'Sustainable Productivity'],
     },
     {
@@ -31,6 +34,7 @@ const services = [
         title: 'Energising Education',
         description: 'Provide reliable solar power to schools and educational institutions across Nigeria.',
         icon: BarChart3,
+        image: '/images/solar-background.png',
         benefits: ['Digital Learning', 'Sustainable Schools', 'Community Impact'],
     },
     {
@@ -38,6 +42,7 @@ const services = [
         title: 'Solar Home System',
         description: 'Bring reliable, affordable solar power to your home with flexible payment plans and 24/7 electricity.',
         icon: Wrench,
+        image: '/images/mini-grid-2.png',
         benefits: ['24/7 Power', 'Cost Savings', 'Easy Installation'],
     },
     {
@@ -45,6 +50,7 @@ const services = [
         title: 'Energy As A Service',
         description: 'Pay only for the energy you use with flexible financing options that eliminate upfront capital costs.',
         icon: DollarSign,
+        image: '/images/mini-grid-1.png',
         benefits: ['No Upfront Cost', 'Flexible Financing', 'Risk Elimination'],
     },
     {
@@ -52,6 +58,7 @@ const services = [
         title: 'Commercial & Industries',
         description: 'Custom-engineered solutions that reduce operating costs for manufacturers and industrial facilities by up to 70%.',
         icon: Building2,
+        image: '/images/team-site-visit.png',
         benefits: ['Cost Reduction', 'Custom Design', 'Industrial Grade'],
     },
 ]
@@ -89,22 +96,32 @@ export default function Services() {
                                 const IconComponent = service.icon
                                 return (
                                     <Link href={`/services/${service.id}`} key={service.id}>
-                                        <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full flex flex-col">
-                                            <div className="mb-4 text-primary-green">
-                                                <IconComponent size={48} strokeWidth={1.5} />
+                                        <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full flex flex-col">
+                                            <div className="relative w-full h-60 bg-gray-200 overflow-hidden">
+                                                <Image
+                                                    src={service.image}
+                                                    alt={service.title}
+                                                    fill
+                                                    className="object-cover hover:scale-105 transition-transform duration-300"
+                                                />
                                             </div>
-                                            <h3 className="heading-3 text-xl mb-3">{service.title}</h3>
-                                            <p className="text-medium-gray text-sm mb-6 flex-grow">{service.description}</p>
-                                            <div className="space-y-2 mb-6">
-                                                {service.benefits.map((benefit, idx) => (
-                                                    <p key={idx} className="text-sm text-primary-green font-medium flex items-center gap-2">
-                                                        <span className="text-primary-green">✓</span> {benefit}
-                                                    </p>
-                                                ))}
+                                            <div className="p-8 flex flex-col flex-grow">
+                                                <div className="mb-4 text-primary-green">
+                                                    <IconComponent size={48} strokeWidth={1.5} />
+                                                </div>
+                                                <h3 className="heading-3 text-xl mb-3">{service.title}</h3>
+                                                <p className="text-medium-gray text-sm mb-6 flex-grow">{service.description}</p>
+                                                <div className="space-y-2 mb-6">
+                                                    {service.benefits.map((benefit, idx) => (
+                                                        <p key={idx} className="text-sm text-primary-green font-medium flex items-center gap-2">
+                                                            <span className="text-primary-green">✓</span> {benefit}
+                                                        </p>
+                                                    ))}
+                                                </div>
+                                                <Button variant="ghost" className="text-left p-0 justify-start">
+                                                    Learn more →
+                                                </Button>
                                             </div>
-                                            <Button variant="ghost" className="text-left p-0 justify-start">
-                                                Learn more →
-                                            </Button>
                                         </div>
                                     </Link>
                                 )
