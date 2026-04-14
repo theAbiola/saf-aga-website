@@ -54,13 +54,6 @@ const services = [
         icon: Building2,
         benefits: ['Cost Reduction', 'Custom Design', 'Industrial Grade'],
     },
-    {
-        id: 'lease-to-own',
-        title: 'Lease to Own',
-        description: 'Flexible payment plans that let you transition from leasing to full ownership over time.',
-        icon: FileText,
-        benefits: ['Flexible Payments', 'Ownership Path', 'Budget Friendly'],
-    },
 ]
 
 export default function Services() {

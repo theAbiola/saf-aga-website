@@ -19,7 +19,6 @@ export default function Footer() {
         { href: '/services/energy-as-a-service', label: 'Energy As A Service' },
         { href: '/services/productive-use-equipment', label: 'Productive Use Equipment' },
         { href: '/services/commercial-industries', label: 'Commercial & Industries' },
-        { href: '/services/lease-to-own', label: 'Lease to Own' },
     ]
 
     const socialLinks = [
