@@ -18,11 +18,17 @@ export default function About() {
             <Header />
             <PageContainer>
                 {/* Hero Section */}
-                <section className="pt-24 pb-12 bg-gradient-to-r from-primary-green/10 to-dark-green/10">
-                    <div className="section-container">
+                <section
+                    className="pt-24 pb-12 bg-cover bg-center bg-no-repeat relative min-h-[500px] flex items-center"
+                    style={{
+                        backgroundImage: 'url(/images/solar-background.png)',
+                    }}
+                >
+                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="section-container relative z-10">
                         <div className="max-w-3xl">
-                            <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6">About SAF-AGA Renewable Energy Limited</h1>
-                            <p className="text-xl text-medium-gray mb-6">
+                            <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6 text-white">About SAF-AGA Renewable Energy Limited</h1>
+                            <p className="text-xl text-white/90 mb-6">
                                 Transforming energy access across Nigeria through innovative, sustainable, and cost-effective renewable solutions.
                             </p>
                         </div>
@@ -98,6 +104,9 @@ export default function About() {
                         </p>
                         <p className="text-lg text-medium-gray leading-relaxed mb-6">
                             Established as a Limited Liability Company under the Corporate Affairs Commission, the enterprise prides itself on a unique blend of innovation, community service, and environmental stewardship.
+                        </p>
+                        <p className="text-lg text-medium-gray leading-relaxed mb-6">
+                            SAF-AGA is a member of the Renewable Energy Association of Nigeria (REAN).
                         </p>
                         <p className="text-lg text-medium-gray leading-relaxed">
                             Today, SAF-AGA Renewable Energy Limited remains committed to our founding mission: making renewable energy accessible, affordable, and reliable for everyone. We continue to innovate, invest in our team, and push the boundaries of what's possible in Nigeria's renewable energy sector.
@@ -193,7 +202,7 @@ export default function About() {
                                 <h3 className="heading-3 text-lg mb-1">Dr. Godbless Safugha</h3>
                                 <p className="text-primary-green font-semibold mb-3">Managing Director (MD / CEO)</p>
                                 <p className="text-medium-gray text-sm">
-                                    Development economist with 18 years of experience in the financial services industry. He is an accomplished executive leader with a proven track record in financial inclusion, project management, business development, and renewable energy.
+                                    Development economist with 18+ years of experience in the financial services industry. He is an accomplished executive leader with a proven track record in financial inclusion, project management, business development, and renewable energy.
                                 </p>
                             </div>
 
@@ -205,7 +214,7 @@ export default function About() {
                                 <h3 className="heading-3 text-lg mb-1">Mr. Agara Anthony Chuks</h3>
                                 <p className="text-primary-green font-semibold mb-3">Executive Director</p>
                                 <p className="text-medium-gray text-sm">
-                                    Top-performing professional with a strong passion for sales, Marketing, business development and expansion. An excellence-oriented, highly-motivated, productive and dynamic professional with strong commercial awareness.
+                                    Top-performing professional with 8+ years of experience in the energy sector and a related field, with expertise in operations management, project management, and stakeholder engagement.
                                 </p>
                             </div>
 
@@ -237,12 +246,12 @@ export default function About() {
                             {/* Team Member 5 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
                                 <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    👩‍💻
+                                    👨‍🔬
                                 </div>
-                                <h3 className="heading-3 text-lg mb-1">Amara Chioma</h3>
-                                <p className="text-primary-green font-semibold mb-3">Director of Technology</p>
+                                <h3 className="heading-3 text-lg mb-1">Engr. Augustine Ngbede Elaigwu</h3>
+                                <p className="text-primary-green font-semibold mb-3">Chief Engineer</p>
                                 <p className="text-medium-gray text-sm">
-                                    Software engineer leading our digital transformation, IoT solutions, and monitoring platform development.
+                                    8+ years of experience in electrical engineering, with expertise in solar power systems, mini-grid design, and construction management.
                                 </p>
                             </div>
 
@@ -251,10 +260,43 @@ export default function About() {
                                 <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
                                     📊
                                 </div>
-                                <h3 className="heading-3 text-lg mb-1">Segun Lawal</h3>
-                                <p className="text-primary-green font-semibold mb-3">Head of Finance</p>
+                                <h3 className="heading-3 text-lg mb-1">Favour Ebipade</h3>
+                                <p className="text-primary-green font-semibold mb-3">Finance Manager</p>
                                 <p className="text-medium-gray text-sm">
-                                    Financial expert managing budgets, funding strategies, and ensuring sustainable business growth and returns.
+                                    5+ years of experience in financial management, with expertise in financial analysis, budgeting, and reporting.
+                                </p>
+                            </div>
+                            {/* Team Member 7 */}
+                            <div className="bg-off-white p-8 rounded-lg text-center">
+                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
+                                    📊
+                                </div>
+                                <h3 className="heading-3 text-lg mb-1">Stephanie Wealth</h3>
+                                <p className="text-primary-green font-semibold mb-3">Project Manager</p>
+                                <p className="text-medium-gray text-sm">
+                                    10+ years of experience in project management, with demonstrated ability to manage complex projects and deliver results on time and within budget.
+                                </p>
+                            </div>
+                            {/* Team Member 8 */}
+                            <div className="bg-off-white p-8 rounded-lg text-center">
+                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
+                                    📊
+                                </div>
+                                <h3 className="heading-3 text-lg mb-1">Alfred Enebe</h3>
+                                <p className="text-primary-green font-semibold mb-3">Grid Manager</p>
+                                <p className="text-medium-gray text-sm">
+                                    3+ years of experience in mini grid management, with expertise in power systems operation, maintenance, and backend support system.
+                                </p>
+                            </div>
+                            {/* Team Member 9 */}
+                            <div className="bg-off-white p-8 rounded-lg text-center">
+                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
+                                    📊
+                                </div>
+                                <h3 className="heading-3 text-lg mb-1">Olayinka Obadeyi Matanmi</h3>
+                                <p className="text-primary-green font-semibold mb-3">Technology Officer</p>
+                                <p className="text-medium-gray text-sm">
+                                    8+ years of experience in technology leadership, with expertise in software development, data analytics, and emerging technologies.
                                 </p>
                             </div>
                         </div>
