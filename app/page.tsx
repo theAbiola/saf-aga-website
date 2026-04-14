@@ -653,14 +653,20 @@ export default function Home() {
                             `}</style>
                             <div className="partners-scroll">
                                 {/* First set of logos */}
-                                {[1, 2, 3, 4, 5].map((index) => (
+                                {[
+                                    { src: '/images/partner-images/emeraid-agency.png', alt: 'Emeraid' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
+                                    { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
+                                    { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
+                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
+                                ].map((logo, index) => (
                                     <div
                                         key={`logo-1-${index}`}
                                         className="flex-shrink-0 w-40 h-20 flex items-center justify-center px-4"
                                     >
                                         <Image
-                                            src="/SAF-AGA-Logo.png"
-                                            alt={`Partner Logo ${index}`}
+                                            src={logo.src}
+                                            alt={logo.alt}
                                             width={150}
                                             height={60}
                                             className="object-contain max-h-16"
@@ -668,14 +674,20 @@ export default function Home() {
                                     </div>
                                 ))}
                                 {/* Duplicate set for seamless loop */}
-                                {[1, 2, 3, 4, 5].map((index) => (
+                                {[
+                                    { src: '/images/partner-images/emeraid-agency.png', alt: 'Emeraid' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
+                                    { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
+                                    { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
+                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
+                                ].map((logo, index) => (
                                     <div
                                         key={`logo-2-${index}`}
                                         className="flex-shrink-0 w-40 h-20 flex items-center justify-center px-4"
                                     >
                                         <Image
-                                            src="/SAF-AGA-Logo.png"
-                                            alt={`Partner Logo ${index}`}
+                                            src={logo.src}
+                                            alt={logo.alt}
                                             width={150}
                                             height={60}
                                             className="object-contain max-h-16"
@@ -689,14 +701,19 @@ export default function Home() {
                         <div className="overflow-hidden mb-8">
                             <div className="partners-scroll-reverse">
                                 {/* First set of logos */}
-                                {[1, 2, 3, 4].map((index) => (
+                                {[
+                                    { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
+                                    { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
+                                    { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                ].map((logo, index) => (
                                     <div
                                         key={`logo-row2-1-${index}`}
                                         className="flex-shrink-0 w-40 h-20 flex items-center justify-center px-4"
                                     >
                                         <Image
-                                            src="/SAF-AGA-Logo.png"
-                                            alt={`Partner Logo ${index}`}
+                                            src={logo.src}
+                                            alt={logo.alt}
                                             width={150}
                                             height={60}
                                             className="object-contain max-h-16"
@@ -704,14 +721,19 @@ export default function Home() {
                                     </div>
                                 ))}
                                 {/* Duplicate set for seamless loop */}
-                                {[1, 2, 3, 4].map((index) => (
+                                {[
+                                    { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
+                                    { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
+                                    { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                ].map((logo, index) => (
                                     <div
                                         key={`logo-row2-2-${index}`}
                                         className="flex-shrink-0 w-40 h-20 flex items-center justify-center px-4"
                                     >
                                         <Image
-                                            src="/SAF-AGA-Logo.png"
-                                            alt={`Partner Logo ${index}`}
+                                            src={logo.src}
+                                            alt={logo.alt}
                                             width={150}
                                             height={60}
                                             className="object-contain max-h-16"
