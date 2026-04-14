@@ -14,8 +14,8 @@ export default function Footer() {
 
     const services = [
         { href: '/services/mini-grid-solutions', label: 'Mini-Grid Solutions' },
-        { href: '/services/professional-energy-audit', label: 'Professional Energy Audit' },
-        { href: '/services/operations-and-maintenance', label: 'Operations and Maintenance' },
+        { href: '/services/energising-education', label: 'Energising Education' },
+        { href: '/services/solar-home-system', label: 'Solar Home System' },
         { href: '/services/energy-as-a-service', label: 'Energy As A Service' },
         { href: '/services/productive-use-equipment', label: 'Productive Use Equipment' },
         { href: '/services/commercial-industries', label: 'Commercial & Industries' },

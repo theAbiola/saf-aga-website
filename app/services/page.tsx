@@ -20,18 +20,25 @@ const services = [
         benefits: ['24/7 Reliable Power', 'Cost Reduction', 'Community Impact'],
     },
     {
-        id: 'professional-energy-audit',
-        title: 'Professional Energy Audit',
-        description: 'Discover hidden energy savings through detailed audits identifying inefficiencies.',
-        icon: BarChart3,
-        benefits: ['Cost Analysis', 'Efficiency Optimization', 'Actionable Insights'],
+        id: 'productive-use-equipment',
+        title: 'Productive Use Equipment',
+        description: 'Solar-powered equipment and tools to maximize economic returns for rural communities.',
+        icon: Hammer,
+        benefits: ['Economic Growth', 'Community Empowerment', 'Sustainable Productivity'],
     },
     {
-        id: 'operations-and-maintenance',
-        title: 'Operations and Maintenance',
-        description: 'Maximize ROI with 24/7 monitoring ensuring 99%+ system uptime year-round.',
+        id: 'energising-education',
+        title: 'Energising Education',
+        description: 'Provide reliable solar power to schools and educational institutions across Nigeria.',
+        icon: BarChart3,
+        benefits: ['Digital Learning', 'Sustainable Schools', 'Community Impact'],
+    },
+    {
+        id: 'solar-home-system',
+        title: 'Solar Home System',
+        description: 'Bring reliable, affordable solar power to your home with flexible payment plans and 24/7 electricity.',
         icon: Wrench,
-        benefits: ['24/7 Monitoring', '99%+ Uptime', 'Proactive Maintenance'],
+        benefits: ['24/7 Power', 'Cost Savings', 'Easy Installation'],
     },
     {
         id: 'energy-as-a-service',
@@ -39,13 +46,6 @@ const services = [
         description: 'Pay only for the energy you use with flexible financing options that eliminate upfront capital costs.',
         icon: DollarSign,
         benefits: ['No Upfront Cost', 'Flexible Financing', 'Risk Elimination'],
-    },
-    {
-        id: 'productive-use-equipment',
-        title: 'Productive Use Equipment',
-        description: 'Solar-powered equipment and tools to maximize economic returns for rural communities.',
-        icon: Hammer,
-        benefits: ['Economic Growth', 'Community Empowerment', 'Sustainable Productivity'],
     },
     {
         id: 'commercial-industries',
@@ -69,10 +69,16 @@ export default function Services() {
             <Header />
             <PageContainer>
                 {/* Hero Section */}
-                <section className="pt-24 pb-12 bg-gradient-to-r from-primary-green/10 to-dark-green/10">
-                    <div className="section-container">
-                        <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6">Our Services</h1>
-                        <p className="text-xl text-medium-gray max-w-3xl">
+                <section
+                    className="pt-24 pb-12 bg-cover bg-center bg-no-repeat relative min-h-[500px] flex items-center"
+                    style={{
+                        backgroundImage: 'url(/images/mini-grid-1.png)',
+                    }}
+                >
+                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="section-container relative z-10">
+                        <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6 text-white">Our Services</h1>
+                        <p className="text-xl text-white/90 max-w-3xl">
                             Comprehensive renewable energy solutions tailored to your specific needs. From concept to implementation and beyond.
                         </p>
                     </div>

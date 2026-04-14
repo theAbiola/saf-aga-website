@@ -258,7 +258,7 @@ export default function Contact() {
                                             >
                                                 <option value="">Select a service...</option>
                                                 <option value="mini-grid-solutions">Mini-Grid Solutions</option>
-                                                <option value="professional-energy-audit">Professional Energy Audit</option>
+                                                <option value="energising-education">Energising Education</option>
                                                 <option value="operations-and-maintenance">Operations and Maintenance</option>
                                                 <option value="energy-as-a-service">Energy As A Service</option>
                                                 <option value="productive-use-equipment">Productive Use Equipment</option>

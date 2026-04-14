@@ -214,11 +214,17 @@ export default function Projects() {
             <Header />
             <PageContainer>
                 {/* Hero Section */}
-                <section className="pt-24 pb-12 bg-gradient-to-r from-primary-green/10 to-dark-green/10">
-                    <div className="section-container">
+                <section
+                    className="pt-24 pb-12 bg-cover bg-center bg-no-repeat relative min-h-[500px] flex items-center"
+                    style={{
+                        backgroundImage: 'url(/images/solar-background.png)',
+                    }}
+                >
+                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="section-container relative z-10">
                         <div className="max-w-3xl">
-                            <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6">Our Projects</h1>
-                            <p className="text-xl text-medium-gray mb-6">
+                            <h1 className="heading-1 text-4xl sm:text-5xl lg:text-6xl mb-6 text-white">Our Projects</h1>
+                            <p className="text-xl text-white/90 mb-6">
                                 Explore our portfolio of 50+ completed and ongoing renewable energy projects across Nigeria's 36 states.
                             </p>
                         </div>

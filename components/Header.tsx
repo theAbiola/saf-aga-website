@@ -56,8 +56,8 @@ export default function Header() {
             label: 'Services',
             children: [
                 { href: '/services/mini-grid-solutions', label: 'Mini-Grid Solutions', icon: <Zap size={18} /> },
-                { href: '/services/professional-energy-audit', label: 'Professional Energy Audit', icon: <BarChart3 size={18} /> },
-                { href: '/services/operations-and-maintenance', label: 'Operations and Maintenance', icon: <Wrench size={18} /> },
+                { href: '/services/energising-education', label: 'Energising Education', icon: <BarChart3 size={18} /> },
+                { href: '/services/solar-home-system', label: 'Solar Home System', icon: <Wrench size={18} /> },
                 { href: '/services/energy-as-a-service', label: 'Energy As A Service', icon: <Power size={18} /> },
                 { href: '/services/productive-use-equipment', label: 'Productive Use Equipment', icon: <Wrench size={18} /> },
                 { href: '/services/commercial-industries', label: 'Commercial & Industries', icon: <Building2 size={18} /> },
@@ -151,14 +151,14 @@ export default function Header() {
                     <div className="flex items-center gap-4">
                         {/* Mobile Hamburger */}
                         <button
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        className="lg:hidden flex flex-col gap-1.5 w-6"
-                        aria-label="Toggle menu"
-                    >
-                        <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-                        <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? 'opacity-0' : ''}`} />
-                        <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
-                    </button>
+                            onClick={() => setMenuOpen(!menuOpen)}
+                            className="lg:hidden flex flex-col gap-1.5 w-6"
+                            aria-label="Toggle menu"
+                        >
+                            <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                            <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? 'opacity-0' : ''}`} />
+                            <span className={`w-full h-0.5 bg-dark-gray transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+                        </button>
                     </div>
                 </div>
             </header>
