@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Button from './Button'
+import { MapPin } from 'lucide-react'
 
 interface ProjectCardProps {
     id: string
@@ -33,16 +34,6 @@ export default function ProjectCard({
         planned: 'bg-gray-400 text-white',
     }
 
-    const typeEmojis: { [key: string]: string } = {
-        'mini-grid': '🔋',
-        'captive-power': '⚡',
-        'streetlighting': '💡',
-        'industrial': '🏭',
-        'commercial': '🏢',
-        'healthcare': '🏥',
-        'educational': '📚',
-    }
-
     return (
         <Link href={`/projects/${id}`}>
             <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full flex flex-col">
@@ -53,11 +44,11 @@ export default function ProjectCard({
                             src={image}
                             alt={title}
                             fill
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover hover:scale-105 transition-transform duration-300"
                         />
-                    ) : (
-                        <div className="text-6xl">{typeEmojis[type] || '🔆'}</div>
-                    )}
+                    ) : null}
                 </div>
 
                 {/* Content */}
@@ -75,7 +66,7 @@ export default function ProjectCard({
 
                     {/* Location */}
                     <p className="text-sm text-medium-gray mb-4 flex items-center gap-2">
-                        <span>📍</span>
+                        <MapPin size={16} className="text-primary-green flex-shrink-0" />
                         {location}
                     </p>
 
@@ -83,14 +74,10 @@ export default function ProjectCard({
                     <p className="text-sm text-medium-gray mb-6 flex-grow line-clamp-2">{description}</p>
 
                     {/* Metrics */}
-                    <div className="grid grid-cols-2 gap-4 mb-6 pb-6 border-b border-light-gray">
+                    <div className="grid grid-cols-1 gap-4 mb-6 pb-6 border-b border-light-gray">
                         <div>
                             <p className="text-xs text-medium-gray font-semibold">CAPACITY</p>
                             <p className="text-lg font-bold text-primary-green">{capacity}</p>
-                        </div>
-                        <div>
-                            <p className="text-xs text-medium-gray font-semibold">BENEFICIARIES</p>
-                            <p className="text-lg font-bold text-primary-green">{beneficiaries.toLocaleString()}</p>
                         </div>
                     </div>
 

@@ -86,8 +86,8 @@ export async function POST(request: NextRequest) {
                     📍 Abuja – North Central Hub<br />
                     12 Algiers Street, Wuse Zone 5, Abuja Nigeria<br />
                     📞 +234 (0)8036048403<br />
-                    📧 info@safagarenewableenergy.com.ng<br />
-                    🌐 www.safagarenewableenergy.com.ng
+                    📧 info@safagaenergy.com<br />
+                    🌐 www.safagaenergy.com
                 </p>
                 
                 <p style="color: #666; font-size: 12px; margin-top: 30px;">

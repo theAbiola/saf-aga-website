@@ -176,6 +176,76 @@ const projectsData: { [key: string]: any } = {
         co2Offset: '144 tonnes/year',
         image: '🚀',
     },
+    'nmu-warri-solar': {
+        title: 'Nigeria Maritime University Solar Installation',
+        state: 'Delta',
+        location: 'Kurutie Campus, Warri South LGA, Delta State',
+        category: 'Educational Solutions',
+        status: 'Completed',
+        yearCompleted: 2024,
+        capacity: '1.5 MWp',
+        beneficiaries: 5000,
+        investment: '₦315M',
+        powerGeneration: '2,700,000 kWh/year',
+        co2Offset: '1,080 tonnes/year',
+        image: '/solar-panel1.jpg',
+    },
+    'duhs-uburu-solar': {
+        title: 'Dave Umahi Federal University Solar System',
+        state: 'Ebonyi',
+        location: 'Uburu, Ohaozara LGA, Ebonyi State',
+        category: 'Educational Solutions',
+        status: 'Completed',
+        yearCompleted: 2024,
+        capacity: '1.6 MWp',
+        beneficiaries: 5500,
+        investment: '₦336M',
+        powerGeneration: '2,880,000 kWh/year',
+        co2Offset: '1,152 tonnes/year',
+        image: '/solar-panel2.jpg',
+    },
+    'okpokunou-mini-grid': {
+        title: 'Okpokunou Mini-Grid Project',
+        state: 'Delta',
+        location: 'Okpokunou, Delta State',
+        category: 'Mini-Grid Solutions',
+        status: 'Completed',
+        yearCompleted: 2023,
+        capacity: '91 kWp',
+        beneficiaries: 506,
+        investment: '₦19.11M',
+        powerGeneration: '163,800 kWh/year',
+        co2Offset: '65.52 tonnes/year',
+        image: '/solar-panel3.jpg',
+    },
+    'enekorogha-mini-grid': {
+        title: 'Enekorogha Mini-Grid System',
+        state: 'Bayelsa',
+        location: 'Enekorogha, Bayelsa State',
+        category: 'Mini-Grid Solutions',
+        status: 'Completed',
+        yearCompleted: 2023,
+        capacity: '120 kWp',
+        beneficiaries: 490,
+        investment: '₦25.2M',
+        powerGeneration: '216,000 kWh/year',
+        co2Offset: '86.4 tonnes/year',
+        image: '/solar-panel1.jpg',
+    },
+    'ogriagbene-mini-grid': {
+        title: 'Ogriagbene Mini-Grid Installation',
+        state: 'Delta',
+        location: 'Ogriagbene, Delta State',
+        category: 'Mini-Grid Solutions',
+        status: 'Completed',
+        yearCompleted: 2024,
+        capacity: '150 kWp',
+        beneficiaries: 610,
+        investment: '₦31.5M',
+        powerGeneration: '270,000 kWh/year',
+        co2Offset: '108 tonnes/year',
+        image: '/solar-panel2.jpg',
+    },
 }
 
 export default function ProjectDetail({ params }: ProjectDetailsPageProps) {
@@ -199,7 +269,7 @@ export default function ProjectDetail({ params }: ProjectDetailsPageProps) {
                 <section className="pt-24 pb-12 bg-gradient-to-r from-primary-green/10 to-dark-green/10">
                     <div className="section-container">
                         <div className="flex items-center gap-4 mb-6">
-                            <div className="text-5xl">{project.image}</div>
+                            {!project.image?.startsWith('/') && <div className="text-5xl">{project.image}</div>}
                             <div>
                                 <div
                                     className={`inline-block px-3 py-1 ${statusColors[project.status] || 'bg-primary-green'} text-white text-sm font-semibold rounded-full mb-3`}

@@ -154,10 +154,10 @@ export default function Services() {
                                 <h3 className="heading-3 text-lg mb-3">Commercial Solar Programs</h3>
                                 <p className="text-medium-gray text-sm">Hybrid systems stabilizing operations for manufacturing, healthcare, telecom, and infrastructure.</p>
                             </div>
-                            <div className="bg-white p-8 rounded-lg">
+                            {/* <div className="bg-white p-8 rounded-lg">
                                 <h3 className="heading-3 text-lg mb-3">Capacity Building</h3>
                                 <p className="text-medium-gray text-sm">Training technicians, project owners, and community operatives for sustainable energy asset maintenance.</p>
-                            </div>
+                            </div> */}
                             <div className="bg-white p-8 rounded-lg">
                                 <h3 className="heading-3 text-lg mb-3">Investment Support</h3>
                                 <p className="text-medium-gray text-sm">Business models and financing structures tuned for rapid scale and measurable impact.</p>
@@ -171,9 +171,11 @@ export default function Services() {
                     <div className="section-container text-center">
                         <h2 className="text-4xl font-bold mb-6">Ready to discuss your energy needs?</h2>
                         <p className="text-lg mb-8 text-green-50">Our team is ready to help you find the perfect energy solution.</p>
-                        <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
-                            Get in Touch
-                        </Button>
+                        <Link href="/contact">
+                            <Button variant="secondary" className="!border-white !text-white hover:!bg-dark-green">
+                                Get in Touch
+                            </Button>
+                        </Link>
                     </div>
                 </section>
             </PageContainer>

@@ -105,7 +105,7 @@ export default function Contact() {
                                     <div>
                                         <h3 className="font-semibold text-dark-gray mb-2">Abuja – North Central Hub</h3>
                                         <p className="text-medium-gray text-sm mb-2">
-                                            12 Algiers Street, Wuse Zone 5, Abuja Nigeria.
+                                            No. 3, Adamu Attah Close, Zone B Extension, Apo Legislative Quarters, Abuja.
                                         </p>
                                         <p className="text-medium-gray text-sm mb-2">
                                             <span className="font-semibold">Phone:</span> +234 (0)8036048403
@@ -122,13 +122,13 @@ export default function Contact() {
                                     <div className="pt-4 border-t border-light-gray">
                                         <h3 className="font-semibold text-dark-gray mb-3">General Inquiries</h3>
                                         <p className="text-medium-gray text-sm mb-2">
-                                            <span className="font-semibold">Email:</span> info@safagarenewableenergy.com.ng
+                                            <span className="font-semibold">Email:</span> info@safagaenergy.com
                                         </p>
                                         <p className="text-medium-gray text-sm mb-2">
                                             <span className="font-semibold">Emergency Support:</span> +234 (0)8036048403
                                         </p>
                                         <p className="text-medium-gray text-sm">
-                                            <span className="font-semibold">24/7 Support:</span> support@safagarenewableenergy.com.ng
+                                            <span className="font-semibold">24/7 Support:</span> support@safagaenergy.com
                                         </p>
                                     </div>
 
@@ -258,12 +258,12 @@ export default function Contact() {
                                             >
                                                 <option value="">Select a service...</option>
                                                 <option value="mini-grid-solutions">Mini-Grid Solutions</option>
-                                                <option value="energising-education">Energising Education</option>
-                                                <option value="operations-and-maintenance">Operations and Maintenance</option>
-                                                <option value="energy-as-a-service">Energy As A Service</option>
                                                 <option value="productive-use-equipment">Productive Use Equipment</option>
+                                                <option value="solar-home-system">Solar Home System</option>
+                                                <option value="energy-as-a-service">Energy As A Service</option>
                                                 <option value="commercial-industries">Commercial & Industries</option>
                                                 <option value="lease-to-own">Lease to Own</option>
+                                                <option value="operations-and-maintenance">Operations and Maintenance</option>
                                                 <option value="other">Other</option>
                                             </select>
                                         </div>

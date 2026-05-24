@@ -57,9 +57,9 @@ export default function Header() {
             children: [
                 { href: '/services/mini-grid-solutions', label: 'Mini-Grid Solutions', icon: <Zap size={18} /> },
                 { href: '/services/productive-use-equipment', label: 'Productive Use Equipment', icon: <Wrench size={18} /> },
-                { href: '/services/energising-education', label: 'Energising Education', icon: <BarChart3 size={18} /> },
                 { href: '/services/solar-home-system', label: 'Solar Home System', icon: <Wrench size={18} /> },
                 { href: '/services/energy-as-a-service', label: 'Energy As A Service', icon: <Power size={18} /> },
+                { href: '/services/energising-education', label: 'Energising Education', icon: <BarChart3 size={18} /> },
                 { href: '/services/commercial-industries', label: 'Commercial & Industries', icon: <Building2 size={18} /> },
             ],
         },

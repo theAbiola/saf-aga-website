@@ -14,6 +14,8 @@ interface Project {
 interface NigeriaStateMapProps {
     projects: Project[]
     onStateSelect?: (state: string) => void
+    activeStates?: string[]
+    comingSoonStates?: string[]
 }
 
 // State name mapping to handle variations in GeoJSON
@@ -64,7 +66,12 @@ interface Tooltip {
     y: number
 }
 
-export default function NigeriaStateMap({ projects, onStateSelect }: NigeriaStateMapProps) {
+export default function NigeriaStateMap({
+    projects,
+    onStateSelect,
+    activeStates = [],
+    comingSoonStates = []
+}: NigeriaStateMapProps) {
     const [geoData, setGeoData] = useState<any>(null)
     const [tooltip, setTooltip] = useState<Tooltip | null>(null)
     const [hoveredState, setHoveredState] = useState<string | null>(null)
@@ -186,7 +193,10 @@ export default function NigeriaStateMap({ projects, onStateSelect }: NigeriaStat
                 {geoData.features.map((feature: any) => {
                     const geoJsonStateName = feature.properties.NAME_1
                     const normalizedStateName = STATE_NAME_MAP[geoJsonStateName] || geoJsonStateName
-                    const isActive = !!projectsByState[normalizedStateName]
+                    const isActive = activeStates.length > 0
+                        ? activeStates.includes(normalizedStateName)
+                        : !!projectsByState[normalizedStateName]
+                    const isComingSoon = comingSoonStates.includes(normalizedStateName)
                     const isHovered = hoveredState === geoJsonStateName
                     const pathData = pathGenerator(feature)
 
@@ -196,14 +206,14 @@ export default function NigeriaStateMap({ projects, onStateSelect }: NigeriaStat
                         <path
                             key={geoJsonStateName}
                             d={pathData}
-                            fill={isActive ? '#001BB7' : '#e5e7eb'}
+                            fill={isActive ? '#001BB7' : isComingSoon ? '#e5e7eb' : '#e5e7eb'}
                             stroke="#000000"
                             strokeWidth={isHovered ? 2.5 : 1.5}
-                            className={isActive ? "cursor-pointer transition-all duration-150" : "transition-all duration-150"}
-                            style={{ opacity: isHovered ? 0.9 : 1 }}
+                            className={(isActive || isComingSoon) ? "cursor-pointer transition-all duration-150" : "transition-all duration-150"}
+                            style={{ opacity: isHovered ? 0.9 : isComingSoon ? 0.6 : 1 }}
                             onMouseEnter={(e) => handleMouseEnter(feature, e as any)}
                             onMouseLeave={handleMouseLeave}
-                            onClick={() => isActive && handleStateClick(geoJsonStateName)}
+                            onClick={() => (isActive || isComingSoon) && handleStateClick(geoJsonStateName)}
                         />
                     )
                 })}

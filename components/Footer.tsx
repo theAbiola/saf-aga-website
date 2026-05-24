@@ -106,13 +106,13 @@ export default function Footer() {
                         <div className="flex gap-3 items-start">
                             <Mail size={16} className="flex-shrink-0 mt-1" />
                             <div className="text-sm">
-                                <p>info@safagarenewableenergy.com.ng</p>
+                                <p>info@safagaenergy.com</p>
                             </div>
                         </div>
                         <div className="flex gap-3 items-start">
                             <MapPin size={16} className="flex-shrink-0 mt-1" />
                             <p className="text-sm">
-                                12 Algiers Street, Wuse Zone 5, Abuja Nigeria.
+                                No. 3, Adamu Attah Close, Zone B Extension, Apo Legislative Quarters, Abuja.
                             </p>
                         </div>
                     </div>

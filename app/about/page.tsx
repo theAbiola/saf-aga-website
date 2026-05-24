@@ -202,26 +202,42 @@ export default function About() {
                                 <h3 className="heading-3 text-lg mb-1">Dr. Godbless Safugha</h3>
                                 <p className="text-primary-green font-semibold mb-3">Managing Director (MD / CEO)</p>
                                 <p className="text-medium-gray text-sm">
-                                    Development economist with 18+ years of experience in the financial services industry. He is an accomplished executive leader with a proven track record in financial inclusion, project management, business development, and renewable energy.
+                                    Development economist with 18 years of experience in the financial services industry. He is an accomplished executive leader with a proven track record in financial inclusion, project management, business development, and renewable energy.
+                                    He possesses a deep understanding of energy policies and regulations in Nigeria and is highly regarded for his exceptional communication skills, financial acumen, and strong ethical foundation.
+                                    He has held several prominent positions, including Executive Secretary/CEO of the Association of Non-Bank Microfinance Institutions of Nigeria (ANMFIN) under the auspices of the IFAD/FGN Rural Finance Institutions Building Programme and the National Cooperative Financing Agency of Nigeria (CFAN). He has also served as a member of the Central Bank of Nigeria’s (CBN) Financial Inclusion Technical Committee, the Microfinance Advisory Board, and the National Microfinance Policy.
                                 </p>
                             </div>
 
                             {/* Team Member 2 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    👨‍🔬
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    <Image
+                                        src="/images/team-members/agara-anthony-chuks.jpg"
+                                        alt="Agara Anthony Chuks"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    />
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Mr. Agara Anthony Chuks</h3>
                                 <p className="text-primary-green font-semibold mb-3">Executive Director</p>
                                 <p className="text-medium-gray text-sm">
-                                    Top-performing professional with 8+ years of experience in the energy sector and a related field, with expertise in operations management, project management, and stakeholder engagement.
+                                    Seasoned business leader and renewable energy executive with extensive experience in strategic leadership, business development, and market expansion. As the Co-Founder and Executive Director of SAF-AGA Renewable Energy Ltd., he plays a pivotal role in driving the company’s vision to deliver sustainable and impactful energy solutions across underserved communities.
+                                    With a strong background in commercial strategy and operations, Chief Agara has successfully led the development and execution of growth initiatives, partnerships, and large-scale renewable energy projects. His expertise spans corporate management, financial planning, stakeholder engagement, and project execution, positioning him as a key driver of innovation and operational excellence within the organisation.
+                                    Prior to SAF-AGA, he held leadership roles across multiple sectors, where he consistently delivered business growth, expanded market presence, and strengthened organisational performance.
                                 </p>
                             </div>
 
                             {/* Team Member 3 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    👨‍🔬
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    <Image
+                                        src="/images/team-members/henry-alikali.png"
+                                        alt="Henry Oluwarotimi Alikali"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    />
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Henry Oluwarotimi Alikali</h3>
                                 <p className="text-primary-green font-semibold mb-3">Chief Finance Officer (CFO)</p>
@@ -233,8 +249,14 @@ export default function About() {
 
                             {/* Team Member 4 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    💼
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    <Image
+                                        src="/images/team-members/damilola-ayodele.png"
+                                        alt="Damilola Ayodele"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    />
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Damilola Ayodele</h3>
                                 <p className="text-primary-green font-semibold mb-3">Chief Technology Officer (CTO)</p>
@@ -245,8 +267,14 @@ export default function About() {
 
                             {/* Team Member 5 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    👨‍🔬
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    <Image
+                                        src="/images/team-members/augustine-eliagwu.png"
+                                        alt="Augustine Eliagwu"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    />
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Engr. Augustine Ngbede Elaigwu</h3>
                                 <p className="text-primary-green font-semibold mb-3">Chief Engineer</p>
@@ -257,8 +285,14 @@ export default function About() {
 
                             {/* Team Member 6 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    📊
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    {/* <Image
+                                        src="/images/team-members/godbless-safugha.jpg"
+                                        alt="Godbless Safugha"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    /> */}
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Favour Ebipade</h3>
                                 <p className="text-primary-green font-semibold mb-3">Finance Manager</p>
@@ -268,8 +302,14 @@ export default function About() {
                             </div>
                             {/* Team Member 7 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    📊
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    {/* <Image
+                                        src="/images/team-members/godbless-safugha.jpg"
+                                        alt="Godbless Safugha"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    /> */}
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Stephanie Wealth</h3>
                                 <p className="text-primary-green font-semibold mb-3">Project Manager</p>
@@ -279,8 +319,14 @@ export default function About() {
                             </div>
                             {/* Team Member 8 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    📊
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    {/* <Image
+                                        src="/images/team-members/godbless-safugha.jpg"
+                                        alt="Godbless Safugha"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    /> */}
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Alfred Enebe</h3>
                                 <p className="text-primary-green font-semibold mb-3">Grid Manager</p>
@@ -290,8 +336,14 @@ export default function About() {
                             </div>
                             {/* Team Member 9 */}
                             <div className="bg-off-white p-8 rounded-lg text-center">
-                                <div className="w-48 h-48 mx-auto bg-primary-green rounded-full flex items-center justify-center text-4xl mb-4">
-                                    📊
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary-green">
+                                    {/* <Image
+                                        src="/images/team-members/godbless-safugha.jpg"
+                                        alt="Godbless Safugha"
+                                        width={192}
+                                        height={192}
+                                        className="w-full h-full object-cover object-center"
+                                    /> */}
                                 </div>
                                 <h3 className="heading-3 text-lg mb-1">Olayinka Obadeyi Matanmi</h3>
                                 <p className="text-primary-green font-semibold mb-3">Technology Officer</p>
@@ -325,10 +377,10 @@ export default function About() {
                                         <MapPin size={20} className="text-primary-green flex-shrink-0" />
                                         <span>Abuja—North Central Regional Hub</span>
                                     </li>
-                                    {/* <li className="flex gap-3">
-                                        <MapPin size={20} className="text-primary-green flex-shrink-0" />
-                                        <span>Port Harcourt—South-South Regional Hub</span>
-                                    </li> */}
+                                    <li className="flex gap-3">
+                                    
+                                        <span>No. 3, Adamu Attah Close, Zone B Extension, Apo Legislative Quarters, Abuja.</span>
+                                    </li>
                                     {/* <li className="flex gap-3">
                                         <MapPin size={20} className="text-primary-green flex-shrink-0" />
                                         <span>Kano—North West Regional Hub</span>
@@ -361,7 +413,7 @@ export default function About() {
                 </section>
 
                 {/* Certifications & Partnerships */}
-                <section id="certifications" className="section-spacing">
+                {/* <section id="certifications" className="section-spacing">
                     <div className="section-container max-w-5xl">
                         <SectionHeading title="Certifications & Partnerships" />
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -433,7 +485,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Partners Section */}
                 <section id="all-partners" className="section-spacing bg-gray-100">
@@ -491,7 +543,6 @@ export default function About() {
                                     { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
                                     { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
-                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
                                 ].map((logo, index) => (
                                     <div
                                         key={`logo-1-${index}`}
@@ -512,7 +563,6 @@ export default function About() {
                                     { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
                                     { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
-                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
                                 ].map((logo, index) => (
                                     <div
                                         key={`logo-2-${index}`}
@@ -537,6 +587,7 @@ export default function About() {
                                 {[
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
                                 ].map((logo, index) => (
@@ -557,6 +608,7 @@ export default function About() {
                                 {[
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
                                 ].map((logo, index) => (
@@ -630,12 +682,16 @@ export default function About() {
                             Whether you're ready to transform your energy future or join our team, we're here to help. Let's build a sustainable Nigeria together.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="primary" className="border border-white">
-                                Start Your Project
-                            </Button>
-                            <Button variant="ghost" className="!text-white !border !border-white !bg-dark-green hover:!bg-dark-green hover:!text-white">
-                                View Careers
-                            </Button>
+                            <Link href="/contact">
+                                <Button variant="primary" className="border border-white">
+                                    Start Your Project
+                                </Button>
+                            </Link>
+                            <Link href="/services">
+                                <Button variant="ghost" className="!text-white !border !border-white !bg-dark-green hover:!bg-dark-green hover:!text-white">
+                                    View Services
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </section>

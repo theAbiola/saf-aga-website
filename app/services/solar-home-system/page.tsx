@@ -96,7 +96,9 @@ export default function SolarHomeSystem() {
                                     <li>✓ Powers essential appliances</li>
                                     <li>✓ Day/night operation</li>
                                 </ul>
-                                <p className="text-primary-green font-semibold">Starting from ₦500k</p>
+                                <Link href="/contact">
+                                    <p className="text-primary-green font-semibold">Contact us to get a quote.</p>
+                                </Link>
                             </div>
                             <div className="bg-off-white p-8 rounded-lg border-2 border-primary-green">
                                 <h3 className="heading-3 text-lg mb-2">Standard (8-10 kWp)</h3>
@@ -107,7 +109,9 @@ export default function SolarHomeSystem() {
                                     <li>✓ Powers most appliances</li>
                                     <li>✓ Air conditioning compatible</li>
                                 </ul>
-                                <p className="text-primary-green font-semibold">Starting from ₦1.2M</p>
+                                <Link href="/contact">
+                                    <p className="text-primary-green font-semibold">Contact us to get a quote.</p>
+                                </Link>
                             </div>
                             <div className="bg-off-white p-8 rounded-lg border-2 border-primary-green">
                                 <h3 className="heading-3 text-lg mb-2">Premium (15+ kWp)</h3>
@@ -118,8 +122,9 @@ export default function SolarHomeSystem() {
                                     <li>✓ Powers all appliances</li>
                                     <li>✓ High-capacity operation</li>
                                 </ul>
-                                <p className="text-primary-green font-semibold">Starting from ₦2.5M</p>
-                            </div>
+                                <Link href="/contact">
+                                    <p className="text-primary-green font-semibold">Contact us to get a quote.</p>
+                                </Link>                            </div>
                         </div>
                     </div>
                 </section>

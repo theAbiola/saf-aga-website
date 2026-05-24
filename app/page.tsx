@@ -32,10 +32,6 @@ export default function Home() {
 
     const strategicCapabilities = [
         {
-            title: 'Advisory & Development',
-            description: 'Feasibility studies, ESG impact analysis, and regulatory guidance.',
-        },
-        {
             title: 'Engineering & Operations',
             description: 'Complete EPC delivery, asset management, and remote monitoring.',
         },
@@ -47,30 +43,6 @@ export default function Home() {
 
     const featuredProjects = [
         {
-            id: 'nmu-warri-solar',
-            title: 'Nigeria Maritime University Solar Installation',
-            location: 'Kurutie Campus, Warri South LGA, Delta State',
-            state: 'Delta',
-            capacity: '1.5 MWp',
-            beneficiaries: 5000,
-            type: 'educational',
-            status: 'completed' as const,
-            image: '/solar-panel1.jpg',
-            description: 'Large-scale 1.5 MWp solar installation powering Nigeria Maritime University campus with reliable renewable energy.',
-        },
-        {
-            id: 'duhs-uburu-solar',
-            title: 'Dave Umahi Federal University Solar System',
-            location: 'Uburu, Ohaozara LGA, Ebonyi State',
-            state: 'Ebonyi',
-            capacity: '1.6 MWp',
-            beneficiaries: 5500,
-            type: 'educational',
-            status: 'completed' as const,
-            image: '/solar-panel2.jpg',
-            description: '1.6 MWp solar system providing sustainable power to Dave Umahi Federal University of Health Sciences campus.',
-        },
-        {
             id: 'okpokunou-mini-grid',
             title: 'Okpokunou Mini-Grid Project',
             location: 'Okpokunou, Delta State',
@@ -79,32 +51,8 @@ export default function Home() {
             beneficiaries: 506,
             type: 'mini-grid',
             status: 'completed' as const,
-            image: '/solar-panel3.jpg',
-            description: 'Solar mini-grid serving 506 households in Okpokunou with reliable 24/7 renewable power access.',
-        },
-        {
-            id: 'enekorogha-mini-grid',
-            title: 'Enekorogha Mini-Grid System',
-            location: 'Enekorogha, Bayelsa State',
-            state: 'Bayelsa',
-            capacity: '120 kWp',
-            beneficiaries: 490,
-            type: 'mini-grid',
-            status: 'completed' as const,
-            image: '/solar-panel1.jpg',
-            description: 'Community mini-grid providing power to 490 connections in Enekorogha with sustainable energy solutions.',
-        },
-        {
-            id: 'ogriagbene-mini-grid',
-            title: 'Ogriagbene Mini-Grid Installation',
-            location: 'Ogriagbene, Delta State',
-            state: 'Delta',
-            capacity: '150 kWp',
-            beneficiaries: 610,
-            type: 'mini-grid',
-            status: 'completed' as const,
             image: '/solar-panel2.jpg',
-            description: 'Solar mini-grid system connecting 610 households in Ogriagbene to reliable renewable energy.',
+            description: 'A 91 kWp solar mini-grid providing reliable 24/7 renewable power access.',
         },
     ]
 
@@ -162,22 +110,6 @@ export default function Home() {
                                             Design, procurement, installation, and commissioning of high-performance solar and storage assets.
                                         </p>
                                     </div>
-
-                                    {/* Card 3 */}
-                                    <div className="border border-white/30 rounded-2xl p-6 hover:border-white/60 transition-colors duration-300">
-                                        <h4 className="text-xl font-semibold mb-3 text-white">Operations & Growth</h4>
-                                        <p className="text-white/80 text-sm leading-relaxed">
-                                            Managed services and training that keep systems productive and communities powered.
-                                        </p>
-                                    </div>
-
-                                    {/* Card 4 */}
-                                    <div className="border border-white/30 rounded-2xl p-6 hover:border-white/60 transition-colors duration-300">
-                                        <h4 className="text-xl font-semibold mb-3 text-white">Investment Support</h4>
-                                        <p className="text-white/80 text-sm leading-relaxed">
-                                            Business models and financing structures tuned for rapid scale and measurable impact.
-                                        </p>
-                                    </div>
                                 </div>
                                 <Link href="/about">
                                     <button className="mt-8 px-6 py-3 border-2 border-white text-white font-semibold rounded-lg bg-dark-green hover:bg-white/10 transition-colors duration-300">
@@ -190,11 +122,12 @@ export default function Home() {
                 </section>
 
                 {/* Power Solutions Section */}
-                <section className="section-spacing bg-off-white">
+                
+                {/* <section className="section-spacing bg-off-white">
                     <div className="section-container">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                             {/* Left Side */}
-                            <div>
+                            {/* <div>
                                 <h2 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-dark-gray mb-6 leading-tight">
                                     Integrated renewable energy for every scale
                                 </h2>
@@ -213,12 +146,12 @@ export default function Home() {
                                         </button>
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Right Side - Service Cards */}
-                            <div className="space-y-6">
+                            {/* <div className="space-y-6"> */}
                                 {/* Service 1 */}
-                                <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
+                                {/* <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
                                             <Wrench size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
@@ -230,25 +163,25 @@ export default function Home() {
                                             Solar-powered equipment and machinery that enhances productivity for agricultural, commercial, and industrial applications.
                                         </p>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* Service 2 */}
-                                <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
+                                {/* <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
-                                            <Lightbulb size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
+                                            <Building2 size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Energising Education</h3>
+                                        <h3 className="text-xl font-bold text-dark-gray mb-2">Mini-Grid Solutions</h3>
                                         <p className="text-medium-gray text-sm leading-relaxed">
-                                            Renewable energy solutions for schools and universities enabling 24/7 power access for learning, research, and digital transformation.
+                                            Transform rural communities with reliable 24/7 solar power that reduces costs by up to 60% and creates lasting economic opportunities.
                                         </p>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 {/* Service 3 */}
-                                <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
+                                {/* <div className="flex gap-6 items-start bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer group">
                                     <div className="flex-shrink-0">
                                         <div className="w-16 h-16 rounded-full bg-primary-green/10 group-hover:bg-primary-green transition-colors duration-300 flex items-center justify-center">
                                             <Power size={28} className="text-primary-green group-hover:text-white transition-colors duration-300" />
@@ -260,11 +193,11 @@ export default function Home() {
                                             Affordable residential solar solutions that provide reliable, clean energy to households with flexible financing options.
                                         </p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                </div> */}
+                            {/* </div> */}
+                        {/* </div> */}
+                    {/* </div> */}
+                {/* </section> */}
 
                 {/* Our Solutions Section - New Subsection with Image Cards */}
                 <section className="section-spacing bg-white">
@@ -305,25 +238,25 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 2 - Site Assessment and Monitoring */}
+                            {/* Card 2 - Productive Use Equipments */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                                 <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                                     <Image
                                         src="/solar-panel3.jpg"
-                                        alt="Site Assessment and Monitoring"
+                                        alt="Productive Use Equipments"
                                         fill
                                         className="object-cover hover:scale-105 transition-transform duration-300"
                                     />
                                     <div className="absolute inset-0 bg-black/30 flex items-end p-4">
-                                        <h4 className="text-white font-bold text-lg">ASSESSMENT</h4>
+                                        <h4 className="text-white font-bold text-lg">ENERGY</h4>
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Site Assessment and Monitoring</h3>
+                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Productive Use of Energy Solution</h3>
                                     <p className="text-medium-gray text-sm leading-relaxed mb-6">
-                                        Smart, data-driven site assessments with advanced monitoring ensure optimal system performance, predictable results, and prompt issue resolution.
+                                        Solar-powered equipment and machinery that enhances productivity for agricultural, commercial, and industrial applications.
                                     </p>
-                                    <Link href="/services/mini-grid-solutions">
+                                    <Link href="/services/productive-use-equipment">
                                         <button className="w-full py-3 border border-dark-gray text-dark-gray font-semibold rounded-lg hover:bg-dark-gray/5 transition-colors duration-300">
                                             See solution details →
                                         </button>
@@ -331,12 +264,12 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            {/* Card 3 - Load Control and Scalability */}
+                            {/* Card 3 - Solar Home Systems */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                                 <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                                     <Image
                                         src="/solar-panel4.jpg"
-                                        alt="Load Control and Scalability"
+                                        alt="Solar Home Systems"
                                         fill
                                         className="object-cover hover:scale-105 transition-transform duration-300"
                                     />
@@ -345,11 +278,10 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Load Control and Scalability</h3>
+                                    <h3 className="text-2xl font-bold text-dark-gray mb-3">Solar Home Systems</h3>
                                     <p className="text-medium-gray text-sm leading-relaxed mb-6">
-                                        AI-powered load control maximizes energy efficiency while scalable infrastructure supports grid expansion without operational complexity.
-                                    </p>
-                                    <Link href="/services">
+                                        Affordable residential solar solutions that provide reliable, clean energy to households with flexible financing options.                                    </p>
+                                    <Link href="/services/solar-home-system">
                                         <button className="w-full py-3 border border-dark-gray text-dark-gray font-semibold rounded-lg hover:bg-dark-gray/5 transition-colors duration-300">
                                             See solution details →
                                         </button>
@@ -383,9 +315,12 @@ export default function Home() {
                                         description={project.description}
                                     />
                                 ))}
-                            autoRotate={true}
+                            autoRotate={false}
                             rotateInterval={6000}
-                            itemsPerSlide={3}
+                            itemsPerSlide={1}
+                            hideArrows={true}
+                            hideDots={true}
+                            className="flex justify-center"
                         />
                         <div className="text-center mt-12">
                             {selectedState && (
@@ -432,7 +367,7 @@ export default function Home() {
                                             className="text-xl font-bold mb-1"
                                             style={{ color: '#001BB7' }}
                                         >
-                                            12+
+                                            4+
                                         </div>
                                         <div className="text-xs text-medium-gray">STATES</div>
                                     </div>
@@ -490,6 +425,8 @@ export default function Home() {
                                 <NigeriaStateMap
                                     projects={featuredProjects}
                                     onStateSelect={(state) => setSelectedState(state)}
+                                    activeStates={['Delta', 'Niger', 'Bauchi']}
+                                    comingSoonStates={['Bayelsa']}
                                 />
                             </div>
                         </div>
@@ -524,7 +461,7 @@ export default function Home() {
                                         <strong>Community-Centric Approach:</strong> We prioritize community engagement and empowerment in all our projects.
                                     </p>
                                     <p className="text-lg text-slate-700 leading-relaxed">
-                                        <strong>Innovation:</strong> We leverage cutting-edge technologies like PV Coating Solutions, Graphene Battery Solutions, and Advance Energy Management Systems to maximize efficiency and impact.
+                                        <strong>Innovation:</strong> We leverage modern innovative technologies like PV Coating Solutions, Graphene Battery Solutions, and Advance Energy Management Systems to maximize efficiency and impact.
                                     </p>
                                     <p className="text-lg text-slate-700 leading-relaxed">
                                         <strong>Financial Sustainability:</strong> We have reliable funding partners and manage projects for long-term success. Our grids operate sustainably through cost-reflective tariff.
@@ -536,15 +473,15 @@ export default function Home() {
                                     <h3 className="text-primary-green font-bold tracking-wider mb-6">STRATEGIC CAPABILITIES</h3>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                         <div>
-                                            <h4 className="font-bold text-dark-gray mb-2">Advisory & development</h4>
+                                            <h4 className="font-bold text-dark-gray mb-2">Engineering & Operations</h4>
                                             <p className="text-sm text-slate-700 leading-relaxed">
-                                                Feasibility, ESG impact studies, regulatory navigation, and project structuring.
+                                                Complete EPC delivery, asset management, remote monitoring, and lifecycle optimization.
                                             </p>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-dark-gray mb-2">Engineering & operations</h4>
+                                            <h4 className="font-bold text-dark-gray mb-2">Home Solar Systems</h4>
                                             <p className="text-sm text-slate-700 leading-relaxed">
-                                                EPC delivery, asset management, remote monitoring, and lifecycle optimisation.
+                                                Affordable solar power for homes with flexible payment plans and 24/7 electricity.
                                             </p>
                                         </div>
                                     </div>
@@ -601,13 +538,7 @@ export default function Home() {
                                         </p>
                                     </div>
 
-                                    {/* Card 3 */}
-                                    <div className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                                        <h4 className="font-bold text-dark-gray text-lg mb-2">Capacity building</h4>
-                                        <p className="text-sm text-slate-700 leading-relaxed">
-                                            Training technicians, project owners, and community operatives to maintain sustainable energy assets.
-                                        </p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -670,7 +601,6 @@ export default function Home() {
                                     { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
                                     { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
-                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
                                 ].map((logo, index) => (
                                     <div
                                         key={`logo-1-${index}`}
@@ -691,7 +621,6 @@ export default function Home() {
                                     { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/nxt-grid-energy.png', alt: 'NXT GRID' },
                                     { src: '/images/partner-images/pind-agency.png', alt: 'PIND' },
-                                    { src: '/images/partner-images/green-energy.png', alt: 'SAF-AGA' },
                                 ].map((logo, index) => (
                                     <div
                                         key={`logo-2-${index}`}
@@ -716,6 +645,7 @@ export default function Home() {
                                 {[
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
                                 ].map((logo, index) => (
@@ -736,6 +666,7 @@ export default function Home() {
                                 {[
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
+                                    { src: '/images/partner-images/jinko-solar.png', alt: 'JinKO Solar' },
                                     { src: '/images/partner-images/rean-energy.png', alt: 'REAN' },
                                     { src: '/images/partner-images/rea-agency.png', alt: 'REA' },
                                 ].map((logo, index) => (

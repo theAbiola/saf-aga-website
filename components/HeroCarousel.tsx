@@ -17,11 +17,11 @@ export default function HeroCarousel() {
     const [isAutoPlay, setIsAutoPlay] = useState(true)
 
     const slides: CarouselSlide[] = [
+        { image: '/solar-panel2.jpg', alt: 'Solar Panel Installation 2', location: 'Ogriagbene, 150 kWp, Delta State.' },
         { image: '/images/solar-background.png', alt: 'Solar Panel Installation 1', location: 'Okpokunou, 91kWp, Delta State.' },
-        { image: '/solar-panel1.jpg', alt: 'Solar Panel Installation 1', location: 'Enekorogha, 120 kWp, Bayelsa State.' },
-        { image: '/solar-panel2.jpg', alt: 'Solar Panel Installation 2', location: 'Ogriagbene, 150 kWp, Delta State.' },
-        { image: '/solar-panel1.jpg', alt: 'Solar Panel Installation 1', location: 'Enekorogha, 120 kWp, Bayelsa State.' },
-        { image: '/solar-panel2.jpg', alt: 'Solar Panel Installation 2', location: 'Ogriagbene, 150 kWp, Delta State.' },
+        { image: '/solar-panel3.jpg', alt: 'Solar Panel Installation 1', location: 'Enekorogha, 120 kWp, Bayelsa State.' },
+        { image: '/solar-panel4.jpg', alt: 'Solar Panel Installation 2', location: 'Ogriagbene, 150 kWp, Delta State.' },
+        { image: '/solar-panel2.jpg', alt: 'Solar Panel Installation 1', location: 'Enekorogha, 120 kWp, Bayelsa State.' },
         { image: '/images/solar-background.png', alt: 'Solar Panel Installation 1', location: 'Okpokunou, 91kWp, Delta State.' },
     ]
 
