@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
             )
         }
 
-        const recipientEmail = process.env.CONTACT_FORM_EMAIL || 'iamhabibabiola@gmail.com'
+        const recipientEmail = process.env.CONTACT_FORM_EMAIL || 'info@safagaenergy.com'
 
         // Email to business
         const businessEmailHtml = `
